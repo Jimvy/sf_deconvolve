@@ -17,6 +17,7 @@ import numpy as np
 from os.path import splitext
 from astropy.io import fits
 from modopt.base.types import check_npndarray
+from PIL import Image
 
 
 def check_data_format(data, n_dim):
@@ -64,6 +65,11 @@ def read_from_fits(file_name):
     return fits.getdata(file_name)
 
 
+def read_from_bmp(filename):
+    img = np.array(Image.open(filename))
+    return np.array([img])
+
+
 def write_to_fits(file_name, data):
     """Write FITS file
 
@@ -107,6 +113,9 @@ def read_file(file_name):
 
     elif file_name.endswith(('.fits', '.fit', '.FITS', '.FIT')):
         data = read_from_fits(file_name)
+
+    elif file_name.endswith(('bmp', 'BMP')):
+        data = read_from_bmp(file_name)
 
     else:
         raise ValueError(('Invalid file extension [{}]. Files must be FITS or '
