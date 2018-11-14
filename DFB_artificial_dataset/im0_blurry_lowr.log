@@ -1,28 +1,28 @@
-14/11/2018 09:40:51 The log file has been set-up.
-14/11/2018 09:40:51  Running SF_DECONVOLVE
-14/11/2018 09:40:51  - Not all PSFs integrate to 1.0.
-14/11/2018 09:40:51  - Input File: DFB_artificial_dataset/im0_blurry.bmp
-14/11/2018 09:40:51  - PSF File: DFB_artificial_dataset/im0_psf.bmp
-14/11/2018 09:40:51  - Mode: lowr
-14/11/2018 09:40:51  - PSF Type: obj_var
-14/11/2018 09:40:51  - Gradient Type: psf_known
-14/11/2018 09:40:51  - Convolution Method: astropy
-14/11/2018 09:40:51  - Optimisation: condat
-14/11/2018 09:40:51  - Positivity: True
-14/11/2018 09:40:51  - Number of Reweightings: 1
-14/11/2018 09:40:51  - Number of Iterations: 150
-14/11/2018 09:40:51  - Cost Function Window: 1
-14/11/2018 09:40:51  - Convergence Tolerance: 0.0003
-14/11/2018 09:40:51  - Suppress Plots:False
-14/11/2018 09:40:51  - Low Rank Threshold Factor: 1
-14/11/2018 09:40:51  - Low Rank Threshold Type: hard
-14/11/2018 09:40:51  - Low Rank Type: standard
-14/11/2018 09:40:51  - Noise Estimate: 60.7866
-14/11/2018 09:40:52  - Spectral Radius: 4098943057.454667
-14/11/2018 09:40:52  - tau: 0.5
-14/11/2018 09:40:52  - sigma: 0.5
-14/11/2018 09:40:52  - rho: 0.8
-14/11/2018 09:40:52  - 1/tau - sigma||L||^2 >= beta/2: False
-14/11/2018 09:40:52  - lambda: 127570335772812.22
-14/11/2018 09:40:52  - Primal Variable Shape: (1, 512, 512)
-14/11/2018 09:40:52  - Dual Variable Shape: (1, 512, 512)
+14/11/2018 10:17:33 The log file has been set-up.
+14/11/2018 10:17:33  Running SF_DECONVOLVE
+14/11/2018 10:17:33  - Not all PSFs integrate to 1.0.
+14/11/2018 10:17:33  - Input File: DFB_artificial_dataset/im0_blurry.bmp
+14/11/2018 10:17:33  - PSF File: DFB_artificial_dataset/im0_psf.bmp
+14/11/2018 10:17:33  - Mode: lowr
+14/11/2018 10:17:33  - PSF Type: obj_var
+14/11/2018 10:17:33  - Gradient Type: psf_known
+14/11/2018 10:17:33  - Convolution Method: astropy
+14/11/2018 10:17:33  - Optimisation: condat
+14/11/2018 10:17:33  - Positivity: True
+14/11/2018 10:17:33  - Number of Reweightings: 1
+14/11/2018 10:17:33  - Number of Iterations: 150
+14/11/2018 10:17:33  - Cost Function Window: 1
+14/11/2018 10:17:33  - Convergence Tolerance: 0.0003
+14/11/2018 10:17:33  - Suppress Plots:False
+14/11/2018 10:17:33  - Low Rank Threshold Factor: 1
+14/11/2018 10:17:33  - Low Rank Threshold Type: hard
+14/11/2018 10:17:33  - Low Rank Type: standard
+14/11/2018 10:17:33  - Noise Estimate: 60.7866
+14/11/2018 10:17:34  - Spectral Radius: 1024736060.9211485
+14/11/2018 10:17:34  - tau: 0.5
+14/11/2018 10:17:34  - sigma: 0.5
+14/11/2018 10:17:34  - rho: 0.8
+14/11/2018 10:17:34  - 1/tau - sigma||L||^2 >= beta/2: False
+14/11/2018 10:17:34  - lambda: 7910858072180.265
+14/11/2018 10:17:34  - Primal Variable Shape: (16, 127, 127)
+14/11/2018 10:17:34  - Dual Variable Shape: (16, 127, 127)
