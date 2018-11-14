@@ -40,6 +40,7 @@ def check_data_format(data, n_dim):
     """
 
     check_npndarray(data, dtype=float, writeable=False, verbose=False)
+    print(data.ndim)
 
     if data.ndim not in list(n_dim):
         raise ValueError('Input data array has an invalid number of '
@@ -67,7 +68,7 @@ def read_from_fits(file_name):
 
 def read_from_bmp(filename):
     img = np.array(Image.open(filename))
-    return np.array([img])
+    return np.array([img]).astype(np.float)
 
 
 def write_to_fits(file_name, data):
@@ -121,6 +122,7 @@ def read_file(file_name):
         raise ValueError(('Invalid file extension [{}]. Files must be FITS or '
                           'numpy binary.').format(splitext(file_name)[-1]))
 
+    print(file_name)
     check_data_format(data, [2, 3])
 
     return data
