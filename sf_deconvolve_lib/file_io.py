@@ -76,9 +76,9 @@ def read_from_bmp(filename):
             newimg.append(np.array(img[i: min(i + size - 1, len(img) - 1), j: min(j + size - 1, len(img[i]) - 1)]).astype(np.float))
             j = j + size
         i = i + size
-    #print(np.array(newimg))
-    #print()
-    #print("spaaaaaace")
+    print(np.array(newimg))
+    print()
+    print("spaaaaaace")
     #print()
     return np.array(newimg).astype(np.float)
 
