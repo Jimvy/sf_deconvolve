@@ -1,0 +1,17 @@
+14/11/2018 10:33:59 The log file has been set-up.
+14/11/2018 10:33:59  Running SF_DECONVOLVE
+14/11/2018 10:33:59 ERROR: cannot identify image file 'DFB_artificial_dataset/im0_blurry_small.bmp'
+Traceback (most recent call last):
+  File "/Users/Sami/Google Drive/Programmation/Python/deconvolve/sf_deconvolve.py", line 264, in main
+    run_script(log)
+  File "/Users/Sami/Google Drive/Programmation/Python/deconvolve/sf_deconvolve.py", line 96, in run_script
+    opts.current_res)
+  File "/Users/Sami/Google Drive/Programmation/Python/deconvolve/sf_deconvolve_lib/file_io.py", line 169, in read_input_files
+    input_data = read_file(data_file_name)
+  File "/Users/Sami/Google Drive/Programmation/Python/deconvolve/sf_deconvolve_lib/file_io.py", line 131, in read_file
+    data = read_from_bmp(file_name)
+  File "/Users/Sami/Google Drive/Programmation/Python/deconvolve/sf_deconvolve_lib/file_io.py", line 69, in read_from_bmp
+    img = np.array(Image.open(filename))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/PIL/Image.py", line 2657, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file
